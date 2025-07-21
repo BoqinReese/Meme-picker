@@ -24,6 +24,12 @@ function highlightCheckedOption(e){
 function closeModal(){
     memeModal.style.display = 'none'
 }
+memeModal.addEventListener('click', (e) => {
+    if (memeModal.style.display ==='flex'){
+        memeModal.style.display = 'none'
+    }
+})
+
 
 function renderCat(){
     const catObject = getSingleCatObject()
@@ -35,6 +41,7 @@ function renderCat(){
         >
         `
     memeModal.style.display = 'flex'
+
 }
 
 function getSingleCatObject(){
